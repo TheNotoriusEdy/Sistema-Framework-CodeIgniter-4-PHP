@@ -14,3 +14,11 @@ $routes->get('/login', function() {
 $routes->get('/registro', function() {
     return view('Usuarios/Registro');
 });
+
+$routes->post('/registro', 'AuthController::InsertarUsuario');
+
+$routes->get('/dashboard', function() {
+    return view('Usuarios/Dashboard');
+});
+
+$routes->post('/login', 'AuthController::login');
