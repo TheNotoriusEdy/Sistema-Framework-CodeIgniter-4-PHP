@@ -143,22 +143,22 @@
         <h2>Únete a la Función</h2>
         <p class="subtitle">Crea tu cuenta para guardar tus favoritas</p>
 
-        <form action="<?= base_url('auth/store') ?>" method="POST">
+        <form action="<?= base_url('registro') ?>" method="POST">
             
             <div class="name-row">
                 <div class="input-group">
                     <i class="fas fa-user"></i>
                     <input type="text" placeholder="Nombre" required
-                           name=""  /* PON AQUÍ EL NAME (ej: nombre) */
-                           id=""    /* PON AQUÍ EL ID */
+                           name="nombre_usuario"
+                           id="nombre_usuario"
                     >
                 </div>
 
                 <div class="input-group">
                     <i class="fas fa-id-card"></i>
                     <input type="text" placeholder="Apellido" required
-                           name=""  /* PON AQUÍ EL NAME (ej: apellido) */
-                           id=""    /* PON AQUÍ EL ID */
+                           name="apellido_usuario"
+                           id="apellido_usuario"
                     >
                 </div>
             </div>
@@ -166,22 +166,22 @@
             <div class="input-group">
                 <i class="fas fa-envelope"></i>
                 <input type="email" placeholder="Correo electrónico" required
-                       name=""  /* PON AQUÍ EL NAME (ej: email) */
-                       id=""    /* PON AQUÍ EL ID */
+                       name="correo"
+                       id="correo"
                 >
             </div>
 
             <div class="input-group">
                 <i class="fas fa-lock"></i>
                 <input type="password" placeholder="Contraseña" required
-                       name=""  /* PON AQUÍ EL NAME (ej: password) */
-                       id=""    /* PON AQUÍ EL ID */
+                       name="clave"
+                       id="clave"
                 >
             </div>
 
             <button type="submit" class="btn-register"
-                    name=""  /* PON AQUÍ EL NAME */
-                    id=""    /* PON AQUÍ EL ID */
+                    name="btnRegistro"
+                    id="btnRegistro"
             >
                 Obtener mi Ticket
                 <i class="fas fa-ticket-alt"></i>
